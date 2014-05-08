@@ -1,123 +1,98 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
 @font-face {
-    font-family: franchise;
-    src: url('fonts/franchise-bold.ttf'),
-         url('fonts/franchise-bold.eot');
+  font-family: franchise;
+  src: url('fonts/franchise-bold.ttf'), url('fonts/franchise-bold.eot');
 }
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 body {
-    overflow-y: scroll;
-    height: 100%;
-    color: #1a1a1a;
-    background-color: #fdfdfd;
+  overflow-y: scroll;
+  height: 100%;
+  color: #1a1a1a;
+  background-color: #fdfdfd;
 }
-
-ul {
-    list-style: none;
-}
-
-h1 {
-    font-family: franchise, serif;
-    font-weight: bolder;
-}
-
 #pagesContainer {
-    width: 100%;
+  width: 100%;
 }
-
+#pagesContainer .verticalCenterer {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
 section {
-    width: 100%;
-    padding: 0 2.5%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-
-    text-align: center;
-    position: relative;
-
-    /* So that we can use table-cell for vertical centering below */
-    display: table;
+  width: 100%;
+  padding: 0 2.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-align: center;
+  position: relative;
+  /* So that we can use table-cell for vertical centering below */
+  display: table;
 }
-
-.verticalCenterer {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
+section#titlePage {
+  height: 100%;
 }
-
-#titlePage {
-    height: 100%;
-}
-
-h1#title {
-    margin: 7% auto;
-
-    text-transform: uppercase;
-    font-size: 232pt;
-    letter-spacing: -6px;
-    word-spacing: 45px;
-    line-height: 83%;
-}
-
-#keepReading {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-size: 40pt;
-    line-height: 50%;
-}
-
-#keepReading span {
-    font-size: 16pt;
-    font-family: 'Roboto Slab';
-    font-weight: normal;
-    text-shadow: 2px 2px 1px #eee;
-    color: #888;
-}
-
 section.specificPoint {
-    background-color: #0B486B;
-    color: #ddd;
-    height: auto;
-    padding: 50px 14%;
-    font-size: 40pt;
-    font-family: 'Roboto Slab';
-    font-weight: lighter;
+  background-color: #0B486B;
+  color: #ddd;
+  height: auto;
+  padding: 50px 14%;
+  font-size: 40pt;
+  font-family: 'Roboto Slab';
+  font-weight: lighter;
 }
-
-.specificPoint strong {
-    font-weight: 400;
-    color: #fff;
+section.specificPoint strong {
+  font-weight: 400;
+  color: #fff;
 }
-
-.practicalities {
-    display: table;
-    position: relative;
-
-    font-size: 18pt;
-    font-family: 'Roboto Slab';
+section.practicalities {
+  display: table;
+  position: relative;
+  font-size: 18pt;
+  font-family: 'Roboto Slab';
 }
-
-.practicalities .yes, .practicalities .no {
-    width: 40%;
-    margin: 0;
-    padding: 5%;
-
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-
-    background:no-repeat center;    
+section.practicalities .yes,
+section.practicalities .no {
+  width: 40%;
+  margin: 0;
+  padding: 5%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  background: no-repeat center;
 }
-
-.practicalities .yes {
-    background-image:url('images/yes.png');
+section.practicalities .yes {
+  background-image: url('images/yes.png');
 }
-
-.practicalities .no {
-    background-image:url('images/no.png')
+section.practicalities .no {
+  background-image: url('images/no.png');
+}
+h1 {
+  font-family: franchise, serif;
+  font-weight: bolder;
+}
+h1#title {
+  margin: 7% auto;
+  text-transform: uppercase;
+  font-size: 232pt;
+  letter-spacing: -6px;
+  word-spacing: 45px;
+  line-height: 83%;
+}
+#keepReading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 40pt;
+  line-height: 50%;
+}
+#keepReading span {
+  font-size: 16pt;
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+  text-shadow: 2px 2px 1px #eee;
+  color: #888;
 }
